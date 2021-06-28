@@ -1,0 +1,63 @@
+@import '../custom';
+
+.display-2 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+
+    &--intro {
+        display: inline-block;
+        font-family: 'Arbutus', cursive;
+        font-weight: 600;
+    }
+
+    &--description {
+        font-size: 1rem;
+        display: block;
+        text-transform: none;
+    }
+}
+
+// headlines 
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+
+.heading-line::after {
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    padding-top: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: $primary;
+}
+
+.display-3 {
+
+    &--title {
+        font-size: 2.8rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        display: inline-block;
+        background-image: linear-gradient(to right, $primary, $secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include media-breakpoint-down(sm){
+            font-size: 1.2rem;     
+        }
+    }
+}
+
+// border right
+.border-rights {
+    border-right: 0.2rem solid $gray-500;
+    height: 100%;
+}

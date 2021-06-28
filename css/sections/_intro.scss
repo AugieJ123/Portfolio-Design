@@ -1,0 +1,80 @@
+@import "../custom";
+@import "../components/mixins";
+
+.intro-section {
+    @include gradient;
+    @include media-breakpoint-down(sm) {
+        padding: 5rem 0 0 0;
+    }
+
+    padding: 7rem 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intros {
+    .btn-rounded {
+        @include media-breakpoint-down(sm) {
+            display: inline-block;
+        }
+
+    }
+
+    .video-box {
+        position: relative;
+
+        img {
+            @include media-breakpoint-down(sm){
+                width: 100%;
+                
+            }
+        }
+
+        a {
+            // @include absoluteCenter;
+
+            span {
+
+                i {
+                    font-size: 6rem;
+                    color: $blue-dark
+                }
+            }
+        }
+    }
+}
+
+.border-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 6rem;
+    border: 0.55rem solid $white;
+    border-radius: 50%;
+    animation: pluse-border 1s linear infinite;
+
+    &--border-1 {
+        animation-delay: 1s;
+    }
+
+    &--border-2 {
+        animation-delay: 1.5s;
+    }
+
+    &--top-10 {
+        top: 10%;
+    }
+
+    &--top-15 {
+        top: 15%;
+    }
+
+    &--top-20 {
+        top: 20%;
+    }
+
+    &--top-25 {
+        top: 25%;
+    }
+}

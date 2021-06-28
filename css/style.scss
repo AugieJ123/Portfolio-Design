@@ -1,0 +1,18 @@
+@import "./custom";
+
+// import the components 
+@import '../css/components/animations';
+@import '../css/components/buttons';
+@import '../css/components/typograph';
+@import '../css/components/mixins';
+
+// import the sections
+@import '../css/sections/navbar';
+@import '../css/sections/intro';
+@import '../css/sections/companies';
+@import '../css/sections/services';
+@import '../css/sections/fqa';
+@import '../css/sections/portfolio';
+@import '../css/sections/testimonaries';
+@import '../css/sections/contact';
+@import '../css/sections/footer';

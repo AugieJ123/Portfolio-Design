@@ -1,0 +1,14 @@
+@import "../custom";
+
+.menu {
+    @include gradient;
+    
+    li {
+        padding: 0 0.7rem;
+
+        a {
+            color: $white !important;
+            font-weight: 600;
+        }
+    }
+}
