@@ -1,0 +1,96 @@
+@import "../custom";
+@import "../components/mixins";
+
+.footer {
+    padding: 1rem;
+    background-color: $footer;
+}
+
+
+// contact-box 
+.contact-box {
+    position: relative;
+
+    &--icon {
+        width: 2rem;
+        stroke: $primary;
+        padding-top: 0.5rem; 
+
+        @include media-breakpoint-up(sm) {
+            width: 4rem;
+        }
+    }
+
+    &--info {
+        padding: 0.4rem;
+        font-weight: 600;
+
+        &--title {
+            color: $white;
+            text-decoration: none;
+            font-size: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 1.4rem;
+            }
+
+        }
+
+        &--subtitle {
+            color: $gray-600;
+            text-decoration: none;
+            font-size: 0.8rem;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+// social media content 
+
+.footer-sm {
+    background-color: #212121;
+
+    a {
+        color: $white;
+
+        i {
+            font-size: 1rem;
+            margin-left: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 1.6rem;
+            }
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.campany-list {
+    display: block;
+    list-style-type: none;
+    position: relative;
+
+    li {
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+
+.company-title {
+    font-size: 2.0rem;
+    background-image: linear-gradient(to right, #554B9D, #20c997);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
