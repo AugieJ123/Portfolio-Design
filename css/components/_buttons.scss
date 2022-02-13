@@ -36,3 +36,15 @@
         }
     }
 }
+
+.btn-primary {
+
+    &:hover {
+        @include gradient;
+        color: $white;
+
+        span {
+            background-color: rgba($dark, 0.6);
+        }
+    }
+}
